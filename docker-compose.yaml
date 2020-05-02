@@ -1,0 +1,41 @@
+version: "3"
+services:
+  publisher:
+    build:
+      context: ./Publisher
+    depends_on:
+      - emqx
+    stdin_open: true
+    tty: true
+    container_name: publisher
+    image: publisher
+
+  subsciber:
+    build:
+      context: ./Subscriber
+    depends_on:
+      - emqx
+    stdin_open: true
+    tty: true
+    container_name: subscriber
+    image: subscriber
+
+  emqx:
+    image: emqx/emqx:latest
+    volumes:
+      - emqx-data:/opt/emqx/data
+      - emqx-lib:/opt/emqx/lib
+      - ./emqx/emqx_auth_username.conf:/opt/emqx/etc/plugins/emqx_auth_username.conf
+    ports:
+      - 1883:1883
+      - 8083:8083
+      - 18083:18083
+      - 8080:8080
+    environment:
+      EMQX_ALLOW_ANONYMOUS: "false"
+      EMQX_LOADED_PLUGINS: "emqx_recon,emqx_retainer,emqx_management,emqx_dashboard,emqx_auth_username"
+
+volumes:
+    logs:
+    emqx-data:
+    emqx-lib:
