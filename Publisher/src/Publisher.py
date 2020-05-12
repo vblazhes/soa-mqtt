@@ -48,11 +48,11 @@ def on_publish(client, userdata, result):  # create function for callback
 
 # Configuration variables
 mqttclient_log = True
-# broker_address = "broker.hivemq.com"  # URL of online broker (we use hivemq broker / ip address shoud provide if local)
-broker_address = "host.docker.internal"
+broker_address = "broker.hivemq.com"  # URL of online broker (we use hivemq broker / ip address shoud provide if local)
+#broker_address = "host.docker.internal"
 mac_addr = get_mac()  # getting the mac address of the device as a UID for the client
-topic = "server/cpu/test3"
-topic_lwt = "server/lwt"
+topic = "server/cpu/test03"
+topic_lwt = "server/lwt01"
 
 
 def Initialise_clients(cname):
@@ -77,7 +77,7 @@ def Initialise_clients(cname):
 
 
 #  getting instance of the mqtt client
-my_client = Initialise_clients('publisher-' + str(mac_addr))
+my_client = Initialise_clients('publisher00-' + str(mac_addr))
 my_client.will_set(topic_lwt, "Publisher died :(")
 
 # time.sleep(120)
@@ -105,7 +105,7 @@ while 1:
     time.sleep(10)
     usage = 50
     variation = random.randrange(-20, 20)
-    # print(str(usage + variation))
+    print(str(usage + variation))
     my_client.publish(topic=topic, payload=str(usage + variation) + "% CPU Usage", qos=2)
 
 # my_client.disconnect()  # disconnect

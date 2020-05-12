@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b3a1731-a00f-4b45-b2f0-4ab63f75d664" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/emqx/emqx_auth_username.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Publisher/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Publisher/src/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Subscriber/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Subscriber/src/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publisher/Publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/Publisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Subscriber/Subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publisher/src/Publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/Publisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
       <recent name="C:\Users\Pc\PycharmProjects\MQTT\Publisher" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Subscriber (1)">
+  <component name="RunManager" selected="Python.Publisher (1)">
     <configuration name="Publisher (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MQTT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,8 +199,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Publisher (1)" />
         <item itemvalue="Python.Subscriber (1)" />
+        <item itemvalue="Python.Publisher (1)" />
         <item itemvalue="Docker.docker-compose.yaml.publisher: Compose Deployment" />
         <item itemvalue="Python.Publisher" />
         <item itemvalue="Python.Subscriber" />
@@ -227,12 +229,42 @@
       <workItem from="1588422091813" duration="6822000" />
       <workItem from="1588431880730" duration="21000" />
       <workItem from="1588447249920" duration="759000" />
-      <workItem from="1588451691413" duration="3663000" />
+      <workItem from="1588451691413" duration="5314000" />
+      <workItem from="1588755309085" duration="2492000" />
+      <workItem from="1588758472622" duration="189000" />
+      <workItem from="1588758671602" duration="1834000" />
+      <workItem from="1589197379824" duration="275000" />
     </task>
+    <task id="LOCAL-00001" summary="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber">
+      <created>1588460187834</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588460187835</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber">
+      <created>1588460211064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588460211064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber">
+      <created>1588460340740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588460340741</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588290027211">
@@ -247,44 +279,48 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="134" key="#docker-compose.yaml.publisher:_Compose_Deployment/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588273888411" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1588460186794">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588460339839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588460186794" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588460339839" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588756188587">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1588756188587" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588447408431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588447408431" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586944957514" />
-    <state width="723" height="298" key="GridCell.Tab.0.bottom" timestamp="1588431859752">
+    <state width="1493" height="328" key="GridCell.Tab.0.bottom" timestamp="1588758660967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586940417071" />
-    <state width="723" height="298" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588431859752" />
-    <state width="723" height="298" key="GridCell.Tab.0.center" timestamp="1588431859752">
+    <state width="1493" height="328" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588758660967" />
+    <state width="1493" height="328" key="GridCell.Tab.0.center" timestamp="1588758660966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="174" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586940417071" />
-    <state width="723" height="298" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588431859752" />
-    <state width="723" height="298" key="GridCell.Tab.0.left" timestamp="1588431859752">
+    <state width="1493" height="328" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588758660966" />
+    <state width="1493" height="328" key="GridCell.Tab.0.left" timestamp="1588758660966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="174" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586940417071" />
-    <state width="723" height="298" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588431859752" />
-    <state width="723" height="298" key="GridCell.Tab.0.right" timestamp="1588431859752">
+    <state width="1493" height="328" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588758660966" />
+    <state width="1493" height="328" key="GridCell.Tab.0.right" timestamp="1588758660967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="174" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586940417071" />
-    <state width="723" height="298" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588431859752" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588460191785">
+    <state width="1493" height="328" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588758660967" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588460407859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588460191785" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1588447394487">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588460407859" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589197399845">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588447394487" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588431885163" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589197399845" />
     <state x="762" y="0" width="781" height="830" key="dock-window-1" timestamp="1588422535423">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -295,10 +331,10 @@
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1586872671714" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MQTT$Publisher__1_.coverage" NAME="Publisher (1) Coverage Results" MODIFIED="1588427453249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Publisher/src" />
+    <SUITE FILE_PATH="coverage/MQTT$Publisher__1_.coverage" NAME="Publisher (1) Coverage Results" MODIFIED="1588758595555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Publisher/src" />
     <SUITE FILE_PATH="coverage/MQTT$mqtt_sqript.coverage" NAME="mqtt-sqript Coverage Results" MODIFIED="1586872285405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MQTT$Subscriber.coverage" NAME="Subscriber Coverage Results" MODIFIED="1586940171139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MQTT$Publisher.coverage" NAME="Publisher Coverage Results" MODIFIED="1588272120936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Publisher" />
-    <SUITE FILE_PATH="coverage/MQTT$Subscriber__1_.coverage" NAME="Subscriber (1) Coverage Results" MODIFIED="1588427359189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Subscriber/src" />
+    <SUITE FILE_PATH="coverage/MQTT$Subscriber__1_.coverage" NAME="Subscriber (1) Coverage Results" MODIFIED="1588758641354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Subscriber/src" />
   </component>
 </project>
