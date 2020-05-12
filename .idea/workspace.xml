@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b3a1731-a00f-4b45-b2f0-4ab63f75d664" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Publisher/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Publisher/src/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Subscriber/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Subscriber/src/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Publisher/src/Publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/Publisher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" afterDir="false" />
@@ -234,6 +230,7 @@
       <workItem from="1588758472622" duration="189000" />
       <workItem from="1588758671602" duration="1834000" />
       <workItem from="1589197379824" duration="275000" />
+      <workItem from="1589277512319" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber">
       <created>1588460187834</created>
@@ -256,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588460340741</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber">
+      <created>1589277667670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589277667670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,10 +283,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="134" key="#docker-compose.yaml.publisher:_Compose_Deployment/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588273888411" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1588460339839">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1589277725859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1440.860@0.0.1536.824" timestamp="1588460339839" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589277725859" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1588756188587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -45,8 +45,8 @@ def on_disconnect(client, userdata, rc):
 
 # Configuration variables
 mqttclient_log = True
-broker_address = "broker.hivemq.com"  # URL of online broker (we use hivemq broker / ip address shoud provide if local)
-#broker_address = "host.docker.internal"
+#broker_address = "broker.hivemq.com"  # URL of online broker (we use hivemq broker / ip address shoud provide if local)
+broker_address = "host.docker.internal"
 mac_addr = get_mac()  # getting the mac address of the device as a UID for the client
 topic = "server/cpu/test03"
 topic_lwt = "server/lwt01"
