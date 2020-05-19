@@ -25,17 +25,30 @@ services:
     volumes:
       - emqx-data:/opt/emqx/data
       - emqx-lib:/opt/emqx/lib
-      - ./emqx/emqx_auth_username.conf:/opt/emqx/etc/plugins/emqx_auth_username.conf
+      - ./emqx/http/emqx_auth_http.conf:/opt/emqx/etc/plugins/emqx_auth_http.conf
     ports:
       - 1883:1883
       - 8083:8083
       - 18083:18083
       - 8080:8080
+    depends_on:
+      - auth-service
     environment:
       EMQX_ALLOW_ANONYMOUS: "false"
-      EMQX_LOADED_PLUGINS: "emqx_recon,emqx_retainer,emqx_management,emqx_dashboard,emqx_auth_username"
+      EMQX_LOADED_PLUGINS: "emqx_recon,emqx_retainer,emqx_management,emqx_dashboard,emqx_auth_http"
+
+
+  auth-service:
+    build:
+      context: ./auth-service
+    stdin_open: true
+    tty: true
+    ports:
+      - 8000:8000
+    container_name: auth-service
+    image: auth-service
 
 volumes:
-    logs:
-    emqx-data:
-    emqx-lib:
+  logs:
+  emqx-data:
+  emqx-lib:

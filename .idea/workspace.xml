@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b3a1731-a00f-4b45-b2f0-4ab63f75d664" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/auth-service/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/auth-service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emqx/http/emqx_auth_http.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publisher/src/Publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Publisher/src/Publisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subscriber/src/Subscriber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emqx/emqx_auth_username.conf" beforeDir="false" afterPath="$PROJECT_DIR$/emqx/username/emqx_auth_username.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +37,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Pc\PycharmProjects\MQTT\Subscriber\src" />
-      <recent name="C:\Users\Pc\PycharmProjects\MQTT\Subscriber" />
-      <recent name="C:\Users\Pc\PycharmProjects\MQTT\Publisher" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pc\PycharmProjects\soa-mqtt\emqx\username" />
       <recent name="C:\Users\Pc\PycharmProjects\MQTT\emqx" />
       <recent name="C:\Users\Pc\PycharmProjects\MQTT\Subscriber\src" />
       <recent name="C:\Users\Pc\PycharmProjects\MQTT\Publisher\src" />
+      <recent name="C:\Users\Pc\PycharmProjects\MQTT\Subscriber" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pc\PycharmProjects\MQTT\Subscriber\src" />
       <recent name="C:\Users\Pc\PycharmProjects\MQTT\Subscriber" />
       <recent name="C:\Users\Pc\PycharmProjects\MQTT\Publisher" />
     </key>
@@ -231,6 +234,7 @@
       <workItem from="1588758671602" duration="1834000" />
       <workItem from="1589197379824" duration="275000" />
       <workItem from="1589277512319" duration="256000" />
+      <workItem from="1589892159245" duration="15875000" />
     </task>
     <task id="LOCAL-00001" summary="Migrated from cloud hivemq to local emqx broker &#10;Dockerized emqx, publisher and subscriber">
       <created>1588460187834</created>

@@ -1,0 +1,6 @@
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+
+EXPOSE 8000
+COPY ./src /app
+
+CMD ["uvicorn", "auth-service:app", "--host", "0.0.0.0", "--port", "8000"]
